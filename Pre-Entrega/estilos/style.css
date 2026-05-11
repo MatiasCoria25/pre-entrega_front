@@ -1,0 +1,496 @@
+/* ---------- Familias tipograficas ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "oferta";
+    src: url(../fonts/starborn/Starborn.ttf);
+}
+
+@font-face {
+    font-family: "descuento";
+    src: url(../fonts/cheri/CHERL___.TTF);
+}
+
+@font-face {
+    font-family: "pie";
+    src: url(../fonts/simply_olive/Simply\ Olive\ DEMO.ttf);
+}
+
+/* ----------  Reset basico con Selector universal ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Header ---------- */
+
+.barra {
+    width: 100%;
+    height: 80px;
+    background-color: #1861AA;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.barra img {
+    cursor: pointer;
+}
+
+.barra nav {
+    display: flex;
+    gap: 25px;
+}
+
+.barra nav a {
+    color: whitesmoke;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/* ---------- Barra de busqueda ---------- */
+
+.busqueda form input {
+    width: 600px;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    border: 1px solid #1861AA;
+    border-radius: 20px;
+    padding: 5px 10px;
+    outline-color: #1861AA;
+}
+
+/* --------- Iconos esquina ---------- */
+
+.esquina {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.esquina img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* ---------- Banner --------- */
+
+.banner{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.oferta {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.oferta h1 {
+    font-family: 'oferta', Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #1861AA;;
+}
+
+.oferta h3 {
+    margin-top: 10px;
+    font-family: 'descuento', serif;
+    color: blueviolet;
+    font-size: 25px;
+}
+
+.descuento {
+    
+    font-family: 'descuento', sans-serif;
+    color: blueviolet;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.seccion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ---------- Tarjetas ---------- */
+
+.tarjeta {
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #222;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta div img {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    position: static;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    margin: 1px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.tarjeta img:hover {
+    left: 10px;
+    top: 10px;
+}
+
+.tarjeta h3 {
+    color: #222;
+    font-family: "Ubuntu", Arial;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    margin: 10px;
+}
+
+.tarjeta h2 {
+    color: black;
+    font-family: "descuento";
+    font-size: 34px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.btn-compra {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #4f46e5;
+    color: #ffffff;
+    font-family: "Bricolage Grotesque";
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #4f46e5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.btn-compra:hover {
+    background-color: #ffffff;
+    color: #4f46e5;
+}
+
+/* ---------- Publicidad Mario ---------- */
+
+.publicidad {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+
+/* ---------- Personajes ---------- */
+
+.seccion-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.seccion-2 h1 {
+    margin: 50px;
+    padding-top: 60px;
+    text-align: center;
+    font-family: 'oferta', Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #1861AA;;
+}
+
+.seccion-2 div img {
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.seccion-2 div p {
+    width: 170px;
+    color: blueviolet;
+    text-align: center;
+    font-family: "descuento", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+/*---------- Newsletter ---------- */
+
+.newsletter {
+    width: 100%;
+    height: 150px;
+    margin-top: 80px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #088178;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.newsletter h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.newsletter p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff
+}
+
+.newsletter p span {
+    color: #222;
+    font-weight: bolder;
+}
+
+.newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+.newsletter .form input {
+    width: 100%;
+    height: 50px;
+    padding: 0 5px;
+    font-size: 16px;
+    border: 1px solid #088178;
+    border-radius: 20px 0 0 20px;
+    outline-color: #088178;
+}
+
+.newsletter .form button {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #1861AA;
+    white-space: nowrap;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/*---------- Footer ---------- */
+
+.pie-de-pagina {
+    width: 100%;
+    height: 300px;
+    background-color: #1861AA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+}
+
+.pie-de-pagina div img {
+    width: 190px;
+    height: 190px;
+}
+
+.pie-de-pagina div ul li {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.pie-de-pagina div a img {
+    width: 30px;
+    height: 30px;
+}
+
+.pie-de-pagina div h4 {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.pie-de-pagina div p {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.whatsapp {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 50px;
+}
+
+.pie-de-pagina .whatsapp a img {
+    width: 60px;
+    height: 60px;
+    position: fixed;   
+    bottom: 20px;      
+    right: 20px;       
+    cursor: pointer;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------- Media Queries ---------- */
+
+/* --- Tablets (768px) --- */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    .barra {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+        line-height: 40px;
+    }
+    .busqueda form input {
+        width: 100%;
+        max-width: 400px;
+    }
+    .esquina {
+        gap: 15px;
+    }
+
+    /* Banner */
+
+    .banner{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Main */
+
+    .oferta h3 {
+        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* Tarjetas */
+
+    .seccion {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tarjeta {
+        width: 50%;
+        margin: 20px;
+    }
+
+    /* Publicidad Mario */
+
+    .publicidad {
+        width: 100%;
+        height: auto;
+        margin-left: 300px;
+    }
+
+    /* Personajes(muñecos) */
+
+    .seccion-2 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Newsletter */
+    .newsletter {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .newsletter form {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .newsletter .form input{
+        width: 70%;
+        height: auto;
+    }
+    .newsletter form button {
+        border-radius: 20px;
+        margin: 5px 0;
+        width: 20%;
+    }
+
+    /* Footer */
+
+    .pie-de-pagina {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .pie-de-pagina div {
+        margin: 10px 0;
+    }
+    .pie-de-pagina div p {
+        font-size: 14px;
+    }
+    .pie-de-pagina div ul li {
+        font-size: 18px;
+    }
+}
+
+
+
